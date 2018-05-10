@@ -1,9 +1,9 @@
 <?php
 /*
 Plugin Name: HMS Schema Widget
-Plugin URI:  https://thinkholmes.com
+Plugin URI:  https://github.com/michealengland/hms-business-schema/archive/master.zip
 Description: Easily add a schema business address to you site.
-Version:     0.0.1
+Version:     1.0.0
 Author:      Micheal England
 Author URI:  http://michealengland.com
 Text Domain: hms-schema-widget
@@ -26,4 +26,11 @@ along with HMS Schema Widget. If not, see https://www.gnu.org/licenses/licenses.
 
 defined( 'ABSPATH' ) || exit;
 
+// Get Widget
 require_once( plugin_dir_path( __FILE__ ) . 'widget.php' );
+
+
+//Plugin Updates
+$this_file = __FILE__;
+$update_check = "https://github.com/michealengland/hms-business-schema/archive/master.zip";
+require_once('hms-updates.php');
